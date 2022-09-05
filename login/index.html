@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liabrary Management System</title>
+    <!-- font  awesome cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body >
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col nav">
+                    <h2 class="navheading">Library Management System</h2>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col boxrow">
+                <form class="login" id="form">
+                    <p id="error"></p>
+                    <h3>Login</h3>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">User ID</label>
+                      <input type="email" class="form-control" id="email" value="" placeholder="userId">
+                    </div>
+                    <div class="form-group passbox">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" value="" placeholder="Password">
+                      <i class="fa-solid fa-eye-slash icon" id="icon" ></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary formbtn">Login</button>
+                    New User Create Acount <a href="../signup/index.html">Register</a>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

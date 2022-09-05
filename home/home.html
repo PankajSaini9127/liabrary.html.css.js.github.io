@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liabry Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body class="body">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand navheading" href="#">Library Management System</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Book List</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Book Rental</a>
+                  </li>
+                  <div class="account">
+                  <li class="nav-item">
+                    <div class="dropdown">
+                      <button class="dropbtn">Account
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="" id="navemail"></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="navlink">
+                    <button class="btn btn-danger" id="logoutbtn" onclick="logout()">Log Out</button>
+                  </li>
+                </div>
+            </div>
+          </nav>
+          <div class="row">
+            <div class="welcome">
+              <h2 id="welcome">Welcome</h2>
+              <button class="btn btn-primary m-2 btns" id="booklistbtn" >Book List</button>
+              <button class="btn btn-primary m-2 btns" id="bookrentbtn" onclick="bookrent()">Book Rent</button>
+            </div>
+        </div> 
+      </div>
+      <div class="container" >
+        <div class="spiner" id="spiner"></div>
+        <div class="row tablerow" id="tablerow">
+            <div class="col">
+                <h3>Books List</h3>
+                <table border="1" class="table">
+                    <tr>
+                        <th>Sr no</th>
+                        <th>Image</th>
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th>Discription</th>
+                        <th>Buy Links</th>
+                    </tr>
+                </table>
+                <table border="1" class="table" id="table">
+                                     <!--  retriving data -->
+                </table>
+            </div>
+        </div>
+        <footer class="footer" id="footer">
+             <!-- <h3>Copyright (c) 2022 The New York Times Company.  All Rights Reserved.</h3> -->
+        </footer>
+      </div>
+  </body>
+  <script src="home.js"></script>
+</html>
